@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Your Name - Welcome"
+  description="Personal website of [Your Name], software developer and creator."
+>
+  <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <section class="mb-16 text-center">
+      <h1 class="mb-4 text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl">
+        Hi, I'm <span class="text-blue-600 dark:text-blue-400">Your Name</span>
+      </h1>
+      <p class="mb-8 text-xl text-gray-600 dark:text-gray-400">
+        Software Developer | Creative Thinker | Problem Solver
+      </p>
+      <p class="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        Welcome to my corner of the internet! I'm passionate about building elegant solutions
+        to complex problems and creating meaningful digital experiences. Whether it's crafting
+        clean code or exploring new technologies, I'm always excited to learn and grow.
+      </p>
+
+      <!-- Call-to-Action Buttons -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="/about"
+          class="rounded-lg bg-blue-600 px-8 py-3 font-medium text-white transition-colors hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+        >
+          About Me
+        </a>
+        <a
+          href="mailto:your.email@example.com"
+          class="rounded-lg border border-gray-300 bg-white px-8 py-3 font-medium text-gray-900 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-gray-100">
+        What I Do
+      </h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800">
+          <div class="mb-4 text-4xl">💻</div>
+          <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
+            Web Development
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Building modern, responsive websites and web applications with the latest technologies.
+          </p>
+        </div>
+        <div class="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800">
+          <div class="mb-4 text-4xl">🎨</div>
+          <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
+            UI/UX Design
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Creating intuitive and beautiful user interfaces that provide excellent user experiences.
+          </p>
+        </div>
+        <div class="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800">
+          <div class="mb-4 text-4xl">🚀</div>
+          <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
+            Innovation
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Always exploring new ideas and technologies to solve problems in creative ways.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
