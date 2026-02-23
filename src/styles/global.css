@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+
+  /* Site color tokens */
+  --color-site-bg: #ffffff;
+  --color-site-text: #111827;
+  --color-site-muted: #6b7280;
+  --color-site-accent: #3b82f6;
+
+  /* Dot pulse animation */
+  --animate-dot: pulse-dot 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.15; }
+  50%       { opacity: 1;    }
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-site-bg);
+  color: var(--color-site-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
